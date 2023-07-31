@@ -1,0 +1,161 @@
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  font-family: 'NanumSquare', sans-serif !important;
+  font-weight: bold;
+}
+
+.container {
+  width: 100vw;
+  height: 90vh;
+}
+
+.content {
+  margin-right: 10%;
+  margin-left: 10%;
+  height: 90vh;
+  font-size: 5rem;
+}
+
+.introduce-container {
+  display: flex;
+  padding-top: 3%;
+  flex-wrap: wrap;
+}
+
+.name-container {
+  display: flex;
+  margin-top: 3%;
+}
+
+.say-hello {
+  padding-top: 15%;
+  color: #A0A0A0;
+}
+
+.introduce-front {
+  color: #A0A0A0;
+  padding-right: 5%;
+  flex-wrap: nowrap;
+  padding-bottom: 5%;
+}
+
+.introduce-main {
+  color: black;
+}
+
+.name-name {
+  color: #2979ff;
+  padding-right: 2%;
+}
+
+img {
+  width: 43.5vh;
+  position: relative;
+  top: -5%;
+}
+
+.footer-container {
+  width: 100vw;
+  height: 10vh;
+  font-size: 1.5rem;
+}
+
+.footer {
+  margin-right: 10%;
+  margin-left: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  display: flex;
+  width: 30vw;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 5%;
+}
+
+.footer-content {
+  color: #A0A0A0;
+}
+
+a {
+  color: #A0A0A0;
+  text-decoration: none;
+}
+
+.link-portfo a:hover, .link-blog a:hover, .link-github a:hover, .link-contact a:hover {
+  color: #2979ff;
+}
+
+.footer-content:hover {
+  color: #2979ff;
+  cursor: default;
+}
+
+.introduce-main {
+  animation-name: fadein;
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+}
+
+/* 애니메이션 */
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    60% {
+      opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* 모바일 반응형 */
+
+@media screen and (max-width: 479px) {
+  .content {
+    font-size: 2.2rem;
+    height: 75vh;
+  }
+
+  .footer-content {
+    font-size: 1.2rem;
+    height: 5vh;
+  }
+
+  .link-portfo a, .link-blog a, .link-github a, .link-contact a{
+    font-size: 1rem;
+  }
+
+  .link-portfo, .link-blog, .link-github, .link-contact {
+    margin-bottom: 5%;
+  } 
+
+  .footer {
+    display: block;
+  }
+
+  .say-hello {
+    margin-bottom: 5%;
+  }
+
+  .link {
+    width: 70vw;
+  }
+
+  .name-container {
+    margin-top: 15%;
+  }
+
+  img {
+    margin-top: 10%;
+    width: 43vw;
+  }
+}
